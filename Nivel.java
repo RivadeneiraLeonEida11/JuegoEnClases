@@ -33,7 +33,7 @@ public class Nivel {
     }
 
     public void describirZona() {
-        System.out.println("\n🌍 Explorando el Nivel: **" + nombreZona + "**");
+        System.out.println("\nExplorando el Nivel: **" + nombreZona + "**");
         System.out.println("Dificultad de la zona: " + dificultad);
         System.out.println("Enemigos presentes: " + enemigosZona.size());
         System.out.println("Objetos recolectables: " + objetosZona.size());
@@ -47,4 +47,5 @@ public class Nivel {
                 "\nEnemigos: " + enemigosZona.size() +
                 "\nObjetos: " + objetosZona.size();
     }
+
 }
