@@ -35,7 +35,7 @@ public class PersonajeJugador {
 
     public void recolectar(ObjetoRecolectable objeto) {
         inventario.add(objeto);
-        System.out.println(+ nombre + " ha recolectado: " + objeto.getNombre() + "!");
+        System.out.println(" "+ nombre + " ha recolectado: " + objeto.getNombre() + "!");
     }
 
     public void combatir(CriaturaEnemiga enemigo) {
@@ -59,3 +59,4 @@ public class PersonajeJugador {
     }
 
 }
+
