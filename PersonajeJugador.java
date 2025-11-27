@@ -35,11 +35,11 @@ public class PersonajeJugador {
 
     public void recolectar(ObjetoRecolectable objeto) {
         inventario.add(objeto);
-        System.out.println("✨ ¡" + nombre + " ha recolectado: " + objeto.getNombre() + "!");
+        System.out.println(+ nombre + " ha recolectado: " + objeto.getNombre() + "!");
     }
 
     public void combatir(CriaturaEnemiga enemigo) {
-        System.out.println("\n⚔️ " + nombre + " se enfrenta a " + enemigo.getNombre() + "!");
+        System.out.println("\n" + nombre + " se enfrenta a " + enemigo.getNombre() + "!");
         int danioRecibido = enemigo.atacar();
         this.salud -= danioRecibido;
         System.out.println("Salud actual de " + nombre + ": " + this.salud);
@@ -57,4 +57,5 @@ public class PersonajeJugador {
                 "\nDescripción: " + tipo.getDescripcionNarrativa() +
                 "\nObjetos en Inventario: " + inventario.size();
     }
+
 }
